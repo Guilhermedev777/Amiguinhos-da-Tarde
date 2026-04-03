@@ -1,0 +1,55 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+header{ /*cabeçalho*/
+    justify-content: center;
+    border-bottom: 1px solid #d30000;
+    padding: 10px 10px;
+    font-family:DynaPuff;
+    font-size: 20px; /*<div class="logo">Amiguinhos da Tarde</div>*/
+    background-color: rgb(148, 178, 235);
+
+}
+
+header h1{ 
+    color: rgb(255, 255, 255);
+    margin: 7px;
+    padding: 7px;
+}
+
+body{
+
+    background-color: #e5faff;
+
+}
+
+nav{
+    margin-left: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;                /* ativa o flexbox */
+    justify-content: flex-end;    /* alinha todos os li à direita */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;  /* espaçamento entre os links */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0% 10px;
+    margin: 5px;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
