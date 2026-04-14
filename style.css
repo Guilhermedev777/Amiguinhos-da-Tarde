@@ -1,12 +1,15 @@
 *{
     margin: 0%;
     padding: 0%;
+    
 }
+
 header{ /*cabeçalho*/
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    
 
     display: flex; /* necessário pro justify-content funcionar */
     justify-content: center;
@@ -25,6 +28,16 @@ header{ /*cabeçalho*/
 }
 
 
+  html {
+    scroll-behavior: smooth;
+    
+}
+
+
+
+
+
+
 
 body{
     margin: 0;
@@ -35,6 +48,7 @@ body{
     display: flex;
     align-items: center; /*alinha os elementos do cabeçalho*/
     justify-content: center;
+    
 }
 
 .logo {
@@ -61,6 +75,7 @@ nav ul {
     justify-content: flex-end;    /* alinha todos os li à direita */
     margin: 0;
     padding: 0;
+    
 }
 
 nav ul li {
@@ -91,28 +106,24 @@ nav a:hover{
     padding: 0;
 }
     .banner{
-    position: relative;
-    height: 800px;
+    display:flex;
+    justify-content: flex-start;
 }
     .img-banner{
-    width: 635px; /*tamanho*/
-    position: absolute;
-    max-width: 650px;
-    bottom: 0;
-    left: 40px;
-    top: -535px;
+    width: 700px;
+    margin-top: 250px;
 }
         .sol{
-        position: relative;
-        height: 800px;
+        display: flex;
+    justify-content: flex-start; /* mantém à esquerda */
+    
 }
         .img-sol{
-        width: 500px; /*tamanho*/
-        position: absolute;
-        max-width: 400px;
-        top: -345px;
-        left: 155px ;
-        right: -20px;
+        width: 450px;
+
+        margin-top: -350px;   /* substitui o top negativo */
+        margin-left: 130px;   /* substitui o left */
+    
         }
             .hometitulo{
                 background-color: rgba(214, 214, 214, 0.6);
@@ -121,7 +132,7 @@ nav a:hover{
                 border-radius: 15px;
                 position: relative;
                 bottom: 300px;
-                top: 270px;
+                top: 300px;
                 margin-left: 280px;
             }
             .homeconteudo{
@@ -132,7 +143,7 @@ nav a:hover{
                 margin-left: 110px;
                 position: relative;
                 bottom: 300px;
-                top: 260px;
+                top: 290px;
                 font-family:Verdana, Geneva, Tahoma, sans-serif;
             }
                 .screenshot{
@@ -188,8 +199,8 @@ nav a:hover{
                             justify-content: center; /* Centraliza horizontalmente */
                             align-items: center;     /* Centraliza verticalmente */
                             width: 400px;
-                            top: 53px;
-                            right: 740px;
+                            top: 540px;
+                            right: 920px;
 
                         }
                         .balao{
@@ -207,10 +218,212 @@ nav a:hover{
                                 top: 280px;
                                 color:rgb(134, 134, 134);
                         }   
-                        .testehome{
-                            position: absolute;
-                            top: 1000px;
+
+
+
+
+
+
+                        #sobre{
+                            padding: 100px 0;
+                            width: 100%;
+                            position: relative;
                         }
+                        .fundosobre{
+                            display: flex;
+                        }
+                        
+                        
+                        .coelhinho{
+                            margin-top: 260px;
+                            margin-left: -40px;
+                            margin-bottom: -120px; 
+                        }
+
+
+                     /*div*/  .lolacoelho{
+                            position: absolute;
+                            display: inline-block;
+                            top: 50px;
+                            left: -50px;
+                            
+                        }
+
+                    /*imagem balao*/    .coelhofala{
+                            width: 450px;
+                            display: block;
+                            
+                        }
+                        .lolatexto{
+                            position: absolute;
+                            top: 40%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+
+                            text-align: center;
+                            padding: 10px;
+                            width: 40%;
+                            font-size: 24px;
+                            font-family: DynaPuff;
+                            color:#000000
+                        }
+                        .dstq1{
+                            color: pink;
+                        }
+                        .dstq2{
+                            color: blue;
+                        }
+                             
+                
+
+
+
+                              .caixasobre{
+                                display: flex;
+                                justify-content: center;
+                                gap: 30px;
+                                align-items: center;
+                                padding: 100px 0;
+                                background:rgb(148, 178, 235);
+                                border-radius: 15px;
+                                border: 2px solid blue;
+
+                                width: 100vw;
+                                margin-top: 60px;
+                                margin-left: 20px;
+                                
+                                
+                                
+                              }  
+                              .setastexto{
+                                
+                                background-color: #fff;
+                                padding: 20px;
+                                width: 330px;
+                                border-radius: 15px;
+                                box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                                text-align: center;
+                                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                
+
+                                
+                              }
+                              .setas{
+                                width: 100%;
+                                margin: 0; 
+                                padding: 0;
+                              }
+                              .cenoura{
+                                width: 100%;
+                                margin: 0;
+                                padding: 0;
+                              }
+                              /*fim da Sobre*/
+
+                              
+
+
+                              /*inicio da Persona*/
+
+                              #persona{
+                                padding: 100px 0;
+                                width: 100%;
+                                position: relative;
+                              }  
+                              .personafundo{
+                                display: flex;
+                              }
+                              
+                              .mariapersona{
+                                    width: 20%;
+                                    margin-left: 0;
+                                    margin-top: 265px;
+                                    margin-bottom: -100px;
+
+                            }
+
+                               /*div*/    .mariabalao{
+                                            position: absolute;
+                                            display: inline-block;
+                                            top: 10px;
+                                            left: -50px;
+                            }
+                                 /*img*/       .mariafala{
+                                            width: 450px;
+                                            display: block;
+                                        }
+                                        .mariatexto{
+                                            position: absolute;
+                                            top: 40%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
+
+                                            text-align: center;
+                                            padding: 10px;
+                                            width: 40%;
+                                            font-size: 24px;
+                                            font-family: DynaPuff;
+                                            color:#000000
+                                        }
+                                        .destq1{
+                                            color: palevioletred;
+                                        }
+                                        .destq2{
+                                            color: blue;
+                                        }
+
+
+
+
+                                .caixapersona{
+                                    display: flex;
+                                    justify-content:space-between;
+                                    
+                                    align-items: center;
+                                    padding: 30px 30px;
+                                    background:rgb(148, 178, 235);
+                                    border-radius: 15px;
+                                    border: 2px solid blue;
+
+                                    width: 100%;
+                                    margin-top: 15px;
+                                    margin-left: 50px;
+                                }
+                                .fotopersona{
+                                    width: 50% !important;
+                                    height: 90%;
+                                    object-fit: cover;
+                                    margin: 0;
+                                    padding: 0;
+                                    border: 2px solid blue;
+                                    border-radius: 25px;
+                                    overflow: hidden;
+                                    line-height: 0;
+                                }
+                                .sobrepersona{
+                                    max-width: 300px;
+                                    padding: 20px 80px;
+                                    color: rgb(32, 32, 32);
+                                    background-color: #ffffff;
+                                    border-radius: 25px;
+                                    border: 2px solid blue;
+                                    font-family: Verdana, Geneva, Tahoma, sans-serif;
+                                    text-align:start;
+                                    font-size: 17px;
+                                    line-height: 1.5;
+                                    
+                                }
+
+
+                                .rodape {
+                                background-color: #9b9b9b;
+                                color: white;
+                                text-align: center;
+                                padding: 40px 20px;
+                                margin-top: 50px;
+                                font-size: 14px;
+                                border-top: 2px solid rgb(0, 0, 0);
+                                }
 
                    
                         
